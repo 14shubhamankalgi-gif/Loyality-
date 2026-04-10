@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Avadhut Shankar Foods Dashboard</h2>
+        
+        <div class="dashboard-section">
+            <h3>Store QR Code</h3>
+            <p>Customers scan this to get a stamp.</p>
+            <div id="store-qrcode"></div>
+        </div>
+
+        <div class="dashboard-section">
+            <h3>Customer Data</h3>
+            <table id="customerTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Last Visit Time</th>
+                    <th>Stamps</th>
+                    <th>Rewards Claimed</th>
+                </tr>
+                </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        // Generate the QR code for your store
+        new QRCode(document.getElementById("store-qrcode"), "avadhut_shankar_foods_stamp_trigger");
+    </script>
+</body>
+</html>
