@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Loyalty Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome back!</h2>
+        <p>Scan the QR code at Avadhut Shankar Foods to get a stamp.</p>
+        
+        <div id="reader" width="300px"></div>
+        <button onclick="startScanner()">Open Camera to Scan</button>
+
+        <div class="stamp-card">
+            <div class="circle" id="stamp-1">1</div>
+            <div class="circle" id="stamp-2">2</div>
+            <div class="circle" id="stamp-3">3</div>
+            <div class="circle" id="stamp-4">4</div>
+            <div class="circle" id="stamp-5">5</div>
+            <div class="circle" id="stamp-6">6</div>
+            <div class="circle" id="stamp-7">FREE</div>
+        </div>
+        <h3 id="reward-message" style="display:none; color: green;">Congratulations! You've earned a free dish!</h3>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
