@@ -13,8 +13,9 @@ function loginCustomer() {
 function loginOwner() {
     const phone = document.getElementById('ownerPhone').value;
     const pass = document.getElementById('ownerPass').value;
-    if(phone === "8208170542" && pass === "14092001") { // Change this later
-
+    
+    // Updated with your specific phone number and password
+    if(phone === "8208170542" && pass === "14092001") { 
         window.location.href = "owner.html";
     } else {
         alert("Invalid credentials");
